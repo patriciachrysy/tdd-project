@@ -5,7 +5,7 @@ describe Solver do
   let(:solver) { Solver.new }
 
   it 'should raise an exception when a negative integer is passed to factorial function' do
-    expect(solver.factorial(-1)).to raise_error(ArgumentError)
+    expect { solver.factorial(-1) }.to raise_error(ArgumentError)
   end
 
   it 'should return 1 when 0 is passed to factorial function' do
