@@ -20,11 +20,11 @@ describe Solver do
 
   describe "#reverse" do
     it 'should raise an exception when a non string parameter is passed to reverse function' do
-      expect { solver.factorial(12345) }.to raise_error(ArgumentError)
+      expect { solver.reverse(12345) }.to raise_error(ArgumentError)
     end
 
     it 'should return olleh when hello is passed to reverse function' do
-      expect(solver.factorial('hello')).to eq('olleh')
+      expect(solver.reverse('hello')).to eq('olleh')
     end
   end
 end
