@@ -12,4 +12,12 @@ class Solver
 
     word.reverse
   end
+
+  def fizzbuzz(n)
+    raise ArgumentError unless n.is_a?(Integer)
+    return 'fizzbuzz' if n % 3 == 0 && n % 5 == 0
+    return 'buzz' if n % 5 == 0
+    return 'fizz' if n % 3 == 0
+    n.to_s
+  end
 end
