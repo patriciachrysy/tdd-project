@@ -1,12 +1,15 @@
 class Solver
-    def factorial(n)
-        raise ArgumentError unless n >= 0
-        return 1 if n == 0
-        (1..n).inject(1) { |product, number| product * number }
-    end
+  def factorial(num)
+    raise ArgumentError unless num >= 0
 
-    def reverse(word)
-        raise ArgumentError unless word.is_a?(String)
-        word.reverse
-    end
+    return 1 if num.zero?
+
+    (1..num).inject(1) { |product, number| product * number }
+  end
+
+  def reverse(word)
+    raise ArgumentError unless word.is_a?(String)
+
+    word.reverse
+  end
 end
