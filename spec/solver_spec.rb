@@ -27,4 +27,22 @@ describe Solver do
       expect(solver.reverse('hello')).to eq('olleh')
     end
   end
+
+  describe "#fizzbuzz" do
+    it 'should raise an exception when a non integer parameter is passed to fizzbuzz function' do
+      expect { solver.fizzbuzz('hello') }.to raise_error(ArgumentError)
+    end
+    it 'should return fizz when 3 is passed to fizzbuzz function' do
+      expect(solver.fizzbuzz(3)).to eq('fizz')
+    end
+    it 'should return buzz when 5 is passed to fizzbuzz function' do
+      expect(solver.fizzbuzz(5)).to eq('buzz')
+    end
+    it 'should return fizzbuzz when 15 is passed to fizzbuzz function' do
+      expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
+    it 'should return string 7 when 7 is passed to fizzbuzz function' do
+      expect(solver.fizzbuzz(7)).to eq('7')
+    end
+  end
 end
