@@ -15,10 +15,10 @@ class Solver
 
   def fizzbuzz(num)
     raise ArgumentError unless num.is_a?(Integer)
-    
     return 'fizzbuzz' if (num % 3).zero? && (num % 5).zero?
     return 'buzz' if (num % 5).zero?
     return 'fizz' if (num % 3).zero?
+
     n.to_s
   end
 end
