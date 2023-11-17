@@ -28,7 +28,7 @@ describe Solver do
     end
   end
 
-  describe "#fizzbuzz" do
+  describe '#fizzbuzz' do
     it 'should raise an exception when a non integer parameter is passed to fizzbuzz function' do
       expect { solver.fizzbuzz('hello') }.to raise_error(ArgumentError)
     end
